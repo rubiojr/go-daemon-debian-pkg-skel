@@ -1,4 +1,4 @@
-go-daemon-debian-pkg-skel-mtr (0.1-0mytag1) trusty; urgency=medium
+go-daemon-debian-pkg-skel (0.1-0mytag1) trusty; urgency=medium
 
   * Initial release.
 

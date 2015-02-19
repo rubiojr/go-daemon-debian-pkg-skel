@@ -1,0 +1,5 @@
+go-daemon-debian-pkg-skel-mtr (0.1-0mytag1) trusty; urgency=medium
+
+  * Initial release.
+
+ -- Sergio Rubio <rubiojr@frameos.org>  Wed, 18 Feb 2015 21:27:22 +0100

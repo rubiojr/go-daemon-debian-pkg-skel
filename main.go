@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"time"
 	log "github.com/Sirupsen/logrus"
 )

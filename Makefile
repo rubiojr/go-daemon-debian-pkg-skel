@@ -35,7 +35,11 @@ build:
 # Vendors all the deps
 update-deps:
 	rm -rf vendor/src
-	GOPATH=$(PWD)/vendor go get
+	GOBIN=$(PWD)/vendor/bin GOPATH=$(PWD)/vendor go get
 	rm -rf vendor/pkg
+	rm -rf vendor/bin
 	find vendor/src -type d -name '.git' -o -name '.hg' | xargs rm -rf
 	find vendor/src -type f -name '.gitignore' -o -name '.hgignore' | xargs rm
+
+.PHONY: update-deps clean
+

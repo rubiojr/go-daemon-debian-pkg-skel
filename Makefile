@@ -20,6 +20,7 @@ clean:
 	rm -f $(BIN)
 
 debpkg: tarball 
+	mkdir -p $(DEB_TARGET_DIR)
 	# Prevents overwriting a good tarball
 	! test -f $(DEB_TARGET_DIR)/$(NAME)_$(VERSION).orig.tar.gz
 	cd $(BUILD_DIR) && \
